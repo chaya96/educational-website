@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 85%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-top: 20px;
+    
+}
+
+.cards {
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px 10px;
+
+}
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
