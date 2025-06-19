@@ -19,7 +19,7 @@ body {
     text-align: center;
     padding: 15px 0px;
     border-bottom: beige 3px solid;
-    margin: 0px 30px;
+    margin: 0px 30px 20px;
 }
 
 .intro h1 {
@@ -71,7 +71,7 @@ button:hover {
    gap: 24px;
    padding: 20px 5px;
    justify-content: center;
-
+   align-items: flex-start;
 }
 
 .card {
@@ -93,7 +93,14 @@ button:hover {
 }
 
 .detailsHidden {
-    display: none;
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.detailsHidden.show {
+    max-height: 500px; 
 }
 
 footer {
