@@ -8,10 +8,10 @@ buttons.forEach((button) => {
         details.classList.toggle("show");
 
         if (details.classList.contains("show")) {
-            button.textContent = "Show less";
+            button.textContent = isEnglish ? "Show less" : "הסתר";
         }
         else {
-            button.textContent = "Learn more...";
+            button.textContent = isEnglish ? "Learn more..." : "למד עוד...";
         }
     });
 });
@@ -152,6 +152,6 @@ function updateLanguage() {
       }
     });
 
-    document.querySelector(".backToTop").textContent = isEnglish ? "top ↑" : "↑ למעלה";
+    document.querySelector(".backToTop").textContent = isEnglish ? "top" : "למעלה";
 
 }
